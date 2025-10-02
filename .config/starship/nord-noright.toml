@@ -1,0 +1,103 @@
+format = """
+[](fg:#2e3440)\
+$directory\
+[](fg:#2e3440 bg:#3b4252)\
+$git_branch\
+$git_status\
+[](fg:#3b4252 bg:#434c5e)\
+$nodejs\
+$rust\
+$golang\
+$php\
+$python\
+$lua\
+[](fg:#434c5e bg:#4c566a)\
+$time\
+$cmd_duration\
+$package\
+$jobs\
+$os\
+$character"""
+
+[character]
+success_symbol = ""
+error_symbol = "[ ! ](fg:#bf616a bg:#4c566a)"
+format = "[$symbol ](fg:#4c566a)"
+
+[directory]
+style = "fg:#d8dee9 bg:#2e3440"
+format = "[ $path[($read_only)](fg:#88c0d0 bg:#2e3440) ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+read_only = " [ro]"
+
+[git_branch]
+symbol = ""
+style = "bg:#3b4252"
+format = '[[ $symbol $branch ](fg:#D8DEE9 bg:#3b4252)]($style)'
+
+[git_status]
+style = "bg:#3b4252"
+format = '[[($all_status$ahead_behind )](fg:#D8DEE9 bg:#3b4252)]($style)'
+conflicted = ' '
+ahead = '→($count) '
+behind = '←($count) '
+modified = '󰏫 '
+untracked = '? '
+stashed = '≡'
+staged = '+ '
+renamed = '. '
+diverged = '⇌ '
+deleted = ' '
+
+[nodejs]
+symbol = ""
+style = "bg:#434c5e"
+format = '[[ $symbol ($version) ](fg:#a3be8c bg:#434c5e)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:#434c5e"
+format = '[[ $symbol ($version) ](fg:#d08770 bg:#434c5e)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:#434c5e"
+format = '[[ $symbol ($version) ](fg:#81a1c1 bg:#434c5e)]($style)'
+
+[php]
+symbol = ""
+style = "bg:#434c5e"
+format = '[[ $symbol ($version) ](fg:#5e81ac bg:#434c5e)]($style)'
+
+[python]
+symbol = ""
+style = "bg:#434c5e"
+format = '[[ $symbol ($version) ](fg:#88c0d0 bg:#434c5e)]($style)'
+
+[lua]
+symbol = ""
+style = "bg:#434c5e"
+format = '[[ $symbol ($version) ](fg:#5e81ac bg:#434c5e)]($style)'
+
+# --- Right Prompt --- #
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:#4c566a"
+format = '[[ 󰥔 $time ](fg:#d8dee9 bg:#4c566a)]($style)'
+
+[cmd_duration]
+style = "bg:#434c5e"
+format = '[[ $duration ](fg:#d8dee9 bg:#4c566a)]($style)'
+
+[package]
+symbol = "󰏖"
+style = "bg:#4c566a"
+format = '[[ $symbol ($version) ](fg:#d8dee9 bg:#4c566a)]($style)'
+
+[jobs]
+symbol = ""
+style = "bg:#4c566a"
+format = "[ [$symbol ($number)](fg:#d8dee9 $style) ]($style)"

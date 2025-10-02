@@ -1,0 +1,4 @@
+alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+alias reficonf="$EDITOR /boot/efi/EFI/refind/refind.conf"
+alias refiboot="$EDITOR /boot/efi/EFI/refind/boot.conf"
+alias logcat="journalctl -xf"

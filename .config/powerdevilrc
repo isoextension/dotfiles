@@ -1,0 +1,15 @@
+[AC][Performance]
+PowerProfile=performance
+
+[AC][SuspendAndShutdown]
+AutoSuspendAction=0
+PowerButtonAction=64
+SleepMode=3
+
+[Activities][132110c9-945d-45e9-9f75-64c5f92c13f4]
+InhibitScreenManagement=false
+InhibitSuspend=false
+
+[Activities][c6e6372e-3d72-4196-9aa5-23d2c9143e2a]
+InhibitScreenManagement=false
+InhibitSuspend=false

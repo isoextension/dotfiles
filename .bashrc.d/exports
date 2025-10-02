@@ -1,0 +1,4 @@
+export EDITOR=nvim
+export PAGER="gum pager"
+export PATH="$HOME/go/bin:$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/lib/jvm/default/bin:/usr/lib/ccache/bin:/var/lib/flatpak/exports/bin"
+export LAUNCHER=pollymc

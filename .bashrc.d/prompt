@@ -1,0 +1,113 @@
+PROMPT=starship
+# available prompts
+#   zen
+#      calm prompt, minimal
+#   posh
+#      go back to your windows ass
+#   starship
+#      good ol' Starship
+#   ps1
+#      good ol' PS1
+#   green
+#      green
+#   color
+#      ps1 except its colored
+COLOR=mint
+# available colors
+#   arch (btw)
+#   canonical
+#      do i even need to say what this one is
+POSH=agnoster
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# for the love of god no
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_load_posh() {
+    local CONFIG="${1:-$POSH}"
+    eval "$(oh-my-posh init bash --config "$HOME/.config/ohmyposh/$CONFIG.toml")"
+}
+
+_load_starship() {
+    eval "$(starship init bash)"
+}
+
+# PS1 generator with optional colors
+_ps1() {
+    local color="$1"
+    case "$color" in
+        canonical) PS1='\e[32m\u@\h\e[0m:\e[34m\w\e[0m\$ ' ;;
+        arch)      PS1="\[\033[0;36m\][\u@\h \w]\$ \[\033[0m\]" ;;
+        plain)     PS1="\u@\h:\w\$ ";;
+        *)         PS1="[\u@\h \w]\$ " ;;
+    esac
+}
+
+case "$PROMPT" in
+    starship)
+        _load_starship
+        ;;
+    posh)
+        _load_posh "$POSH"
+        ;;
+    ps1)
+        _ps1 "$COLOR"
+        ;;
+    zen)
+        PS1="\w $ "
+        ;;
+    green)
+        PS1="\[\033[0;32m\]\u@\h \w\$ \[\033[0m\]"
+        ;;
+    color)
+        _ps1 "$COLOR"
+        ;;
+    *)
+        echo "Invalid PROMPT value: $PROMPT"
+        exit 2
+        ;;
+esac
