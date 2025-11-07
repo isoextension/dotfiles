@@ -1,0 +1,3 @@
+alias wifi='nmtui'
+alias duckit='xdg-open https://lite.duckduckgo.com'
+alias wget='wget --quiet --show-progress -c'

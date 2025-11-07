@@ -1,0 +1,121 @@
+ignore_list=(
+    "System Volume Information"
+    "OneDriveTemp"
+    ".GamingRoot"
+    ".Trash*"
+    "swapfile.sys"
+    "pagefile.sys"
+    "*.exe"
+    "Recovery"
+    "MacroDB"
+    "*found*"
+    "Documents and Settings"
+    "Archivos de programa*"
+    "*.bak"
+    "*.bkp"
+    "*.vmem"
+    "*.vmdk"
+    "*.vhd*"
+    "*vbox*"
+    "*.o"
+    "*.h"
+    "*.a"
+    "*.so"
+    "System*"
+    "Config-*"
+    "*.log"
+    "log"
+    "logs"
+    "*.logs"
+    "*.swap"
+    "*.swp"
+    "*.tmp"
+    "run"
+    "proc"
+    "sys"
+    "tmp"
+    "dev"
+    ".cache"
+    "inetpub"
+    "FC 25 Live Editor"
+    "*.old"
+    "XboxGames"
+    "\\\$*"
+    "bootTel.dat"
+    "ESD"
+    "PerfLogs"
+    "!System32"
+    "!SysWOW64"
+    ".gnupg"
+    ".*npm*"
+    ".BUILDINFO"
+    ".MTREE"
+    ".cargo"
+    ".nvm"
+    ".var"
+    ".for-espeak"
+    ".pki"
+    ".minecraft"
+    ".vscode-oss"
+    ".gitconfig"
+    ".PKGINFO"
+    "go"
+    ".fortune"
+    ".mozilla"
+    ".rustup"
+    ".zen"
+    ".gtkrc*"
+    ".wget-hsts"
+    ".android"
+    ".gsutil"
+    ".steam*"
+    "nohup.out"
+    ".themes"
+    ".pulse-cookie"
+    ".ollama"
+    ".android"
+    ".cups"
+    ".prefs"
+
+)
+
+IGNORE_GLOB=$(IFS='|'; printf "%s" "-I \"${ignore_list[*]}\"")
+
+# Filesystem / listing
+alias ls="eza -a $IGNORE_GLOB  --icons=always --no-quotes --group-directories-first"
+alias ll="eza -al $IGNORE_GLOB --icons=always --no-quotes --group-directories-first"
+alias la="eza -aa --icons=always --no-quotes --group-directories-first"
+alias lla="eza -aal --icons=always --no-quotes --group-directories-first"
+alias lt="eza -a $IGNORE_GLOB  --tree --level=1 --icons=always --no-quotes --group-directories-first"
+
+# Remove
+alias rm='rm -Iv'
+alias rr='rm -rv'
+alias rrf='rm -rvf'
+alias rf='rm -fv'
+
+# Fileops
+alias cat='bat --style=plain --paging=always -n'
+alias grep='rg -p'
+
+# Lsblk
+alias lsblk='lsblk -no name,label,mountpoints,fsuse%,fssize'
+alias jlsblk='blkid'
+alias flsblk='lsblk -no name,fstype,label,partuuid,mountpoints,fsuse%,fssize'
+
+# Copy
+alias cp='cp --reflink=auto  -rv'
+alias cc='cp --reflink=always -rv'
+alias cpm='cp --reflink=never -rv'
+
+# Perms
+alias chmod='chmod -R'
+alias chown='chown -R'
+
+# Move
+alias mv='mv -vS .bak'
+alias mvf='mv -vfS .bak'
+
+# Rsync
+alias rs='rsync --status=progress'
+alias rsync='rsync --status=progress'
