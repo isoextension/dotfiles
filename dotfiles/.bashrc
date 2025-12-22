@@ -14,7 +14,7 @@
 # =====================================================
 # Configuration
 # -----------------------------------------------------
-fortune=true
+fortune=false
 fortune_voice=false
 load_nvm=true
 load_ssh_agent=false

@@ -66,30 +66,64 @@ ignore_list=(
     ".zen"
     ".gtkrc*"
     ".wget-hsts"
-
+    ".android"
+    ".gsutil"
+    ".steam*"
+    "nohup.out"
+    ".themes"
+    ".pulse-cookie"
+    ".ollama"
+    ".android"
+    ".cups"
+    ".prefs"
+    ".crush"
+    ".gradle"
+    ".skiko"
+    ".wine"
+    ".supermaven"
+    ".thunderbird"
+    ".java"
+    ".continue"
+    ".crush"
+    ".fonts"
+    "TheoTown"
+    "package-lock.json"
+    ".dotnet"
+    ".icons"
+    "templates"
+    "public"
+    "desktop"
+    ".ssh"
+    ".digital.cfg"
+    ".bash_logout"
+    ".bash_profile"
 )
 
-# .bashrc.d  .gnupg      .npm     .ssh         .BUILDINFO   .MTREE
-# .cargo     .local      .nvm     .var         .for-espeak  .npmrc
-# .minecraft  .pki     .vscode-oss  .gitconfig   .PKGINFO
-# .fortune   .mozilla    .rustup  .zen go   .gtkrc-2.0   .wget-hsts
-
-IGNORE_GLOB=$(IFS='|'; echo "-I \"${ignore_list[*]}\"")
+IGNORE_GLOB=$(IFS='|'; printf "%s" "-I \"${ignore_list[*]}\"")
 
 # Filesystem / listing
 alias ls="eza -a $IGNORE_GLOB  --icons=always --no-quotes --group-directories-first"
 alias ll="eza -al $IGNORE_GLOB --icons=always --no-quotes --group-directories-first"
 alias la="eza -aa --icons=always --no-quotes --group-directories-first"
 alias lla="eza -aal --icons=always --no-quotes --group-directories-first"
-alias lt="eza -a $IGNORE_GLOB  --tree --level=1 --icons=always --no-quotes --group-directories-first"
+alias lt="eza -a $IGNORE_GLOB --tree --level=1 --icons=always --no-quotes --group-directories-first"
+alias ld="eza -ald $IGNORE_GLOB --icons=always --no-quotes --group-directories-first"
+alias l="ls"
 
 # Remove
-alias rm='rm -Irv'
+alias rm='rm -Iv'
+alias rr='rm -rv'
+alias rrf='rm -rvf'
+alias rf='rm -fv'
+
+# Fileops
+alias cat='bat --style=plain --paging=always -n'
+alias grep='rg -p'
 
 # Lsblk
-alias lsblk='lsblk -o name,label,mountpoints,fsuse%,fssize'
+alias lsblk='lsblk -no name,label,mountpoints,fsuse%,fssize'
 alias jlsblk='blkid'
-alias flsblk='lsblk -o name,fstype,label,partuuid,mountpoints,fsuse%,fssize'
+alias flsblk='lsblk -no name,fstype,label,partuuid,mountpoints,fsuse%,fssize'
 
 # Copy
 alias cp='cp --reflink=auto  -rv'

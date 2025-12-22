@@ -1,0 +1,319 @@
+rm -rf /tmp/bugs
+%
+there are only two hard things in computer science: cache invalidation and naming things.
+%
+“works on my machine” – famous last words.
+%
+git merge: where teamwork gets tested.
+%
+i don’t always test my code, but when i do, i do it carefully.
+%
+stack overflow: the first 90% of the code, the last 10% of the knowledge.
+%
+commenting code is like writing a note to yourself in the future.
+%
+code is like humor. when you have to explain it, it’s not clear enough.
+%
+if debugging is the process of removing bugs, then programming must be the process of careful problem solving.
+%
+every programmer is optimistic… until they hit a segmentation fault.
+%
+the best code is simple and clear.
+%
+documentation is your friend.
+%
+debugging is like solving a mystery where you are both detective and witness.
+%
+“hello world” is the gateway to programming fun.
+%
+the code you wrote yesterday might surprise you today.
+%
+refactoring: making good code even better.
+%
+premature optimization is like rearranging deck chairs before you know the ship is ready.
+%
+keep your tabs organized; your future self will thank you.
+%
+programming is 10% writing code, 90% understanding why it works.
+%
+there’s no cloud; it’s just someone else’s computer.
+%
+always be careful with system commands.
+%
+real programmers start counting from 0.
+%
+merge conflicts: nature’s way of teaching patience.
+%
+commit messages: “update” is not very descriptive, but it’s okay.
+%
+writing tests is like brushing your teeth: do it regularly.
+%
+coding at 3 am: because inspiration doesn’t keep office hours.
+%
+artificial intelligence is powerful, but humans are creative.
+%
+python: where indentation is meaningful.
+%
+semicolons are optional until they’re not.
+%
+garbage collection: the system tidying up after you.
+%
+infinite loops: best avoided.
+%
+keyboard shortcuts make coding faster.
+%
+the user might have questions, and the logs always tell a story.
+%
+there’s always that one clever line of code that does amazing things.
+%
+refactor early, refactor often.
+%
+version control is like time travel for your code.
+%
+a good variable name is worth a thousand comments.
+%
+whitespace matters. indentation matters more.
+%
+code reviews are where the magic (and the pain) happens.
+%
+your compiler is your friend, not your enemy.
+%
+a program that works today might break tomorrow—plan accordingly.
+%
+don’t reinvent the wheel, but know how it works.
+%
+errors are opportunities to learn.
+%
+automate the boring stuff.
+%
+unit tests: your insurance policy for code.
+%
+integration tests: your safety net for teamwork.
+%
+debugging is like detective work with better coffee.
+%
+comments should explain why, not what.
+%
+documentation should make someone else’s life easier.
+%
+every 404 page is a chance for creativity.
+%
+commit early, commit often.
+%
+branch wisely, merge carefully.
+%
+your ide can help, but it can’t think for you.
+%
+tabs or spaces? just be consistent.
+%
+code smells: learn to recognize them early.
+%
+functions should do one thing and do it well.
+%
+a magic number is only magic until someone asks about it.
+%
+don’t ignore compiler warnings—they’re trying to talk to you.
+%
+logging is like leaving breadcrumbs in the forest of code.
+%
+always test edge cases.
+%
+if it compiles, that’s not always enough.
+%
+simplicity is harder than complexity, but worth it.
+%
+a slow algorithm today is a disaster tomorrow.
+%
+your readme should be welcoming.
+%
+remember: code is read more than it is written.
+%
+pair programming: two minds can solve what one cannot.
+%
+code is poetry if written well.
+%
+comments are conversations with your future self.
+%
+never fear the debugger—it’s your ally.
+%
+a crash is just a surprise opportunity.
+%
+user input is always a mystery.
+%
+naming things is an art form.
+%
+refactor mercilessly.
+%
+a pull request is a story of intent.
+%
+the command line is a powerful friend.
+%
+scripts automate your daily chores.
+%
+variables are the nouns of your program.
+%
+functions are the verbs.
+%
+classes are the blueprints.
+%
+modules are the rooms in your code house.
+%
+dependencies are the furniture: useful, until they’re too many.
+%
+the internet is the ultimate documentation.
+%
+stack overflow saves lives daily.
+%
+error messages are not insults; they’re guides.
+%
+there’s no such thing as perfect code.
+%
+a clean codebase is a happy codebase.
+%
+test coverage is peace of mind.
+%
+an infinite loop is like a merry-go-round without brakes.
+%
+refactoring: turning “works” into “understands”.
+%
+syntax errors: the language’s way of saying “slow down.”
+%
+compilers are picky, but fair.
+%
+every pull request teaches patience.
+%
+debugging teaches humility.
+%
+a function that does too much is a recipe for disaster.
+%
+libraries are friends—know them well.
+%
+a missing semicolon can ruin your day.
+%
+code formatting matters for sanity.
+%
+keyboard shortcuts save seconds, which become hours.
+%
+understanding algorithms is understanding magic.
+%
+data structures shape your thoughts.
+%
+recursion is beautiful when understood.
+%
+comments should be meaningful.
+%
+never hardcode values without a reason.
+%
+dry: don’t repeat yourself.
+%
+yagni: you aren’t gonna need it.
+%
+kiss: keep it simple, silly.
+%
+refactor before features pile up.
+%
+legacy code is a museum of ideas.
+%
+debugging is like finding hidden treasure.
+%
+unit tests are tiny guardians.
+%
+your ide is a partner, not a crutch.
+%
+search engines are always listening.
+%
+version control is your memory bank.
+%
+code readability is respect for others.
+%
+code clarity beats cleverness.
+%
+writing code is thinking aloud.
+%
+your terminal is a canvas.
+%
+breakpoints are pauses for thought.
+%
+logs tell stories.
+%
+a good readme is a welcoming smile.
+%
+comments: for clarity, not excuses.
+%
+refactor: the gift you give future you.
+%
+automation: the quiet worker.
+%
+error messages: guides, not insults.
+%
+user input is always interesting.
+%
+variables: name them wisely.
+%
+functions: small and purposeful.
+%
+classes: coherent and tidy.
+%
+modules: logical and separate.
+%
+dependencies: keep them minimal.
+%
+scripts: repeatable actions.
+%
+command line: powerful and patient.
+%
+compilers: your friends in disguise.
+%
+debugging: detective work with logs.
+%
+documentation: love for collaborators.
+%
+merge conflicts: patience tests.
+%
+pull requests: shared stories.
+%
+refactoring: a daily ritual.
+%
+testing: insurance for code.
+%
+syntax: obey it carefully.
+%
+code style: consistency matters.
+%
+readability: universal kindness.
+%
+git: the time machine for code.
+%
+programming: art and science together.
+%
+keyboard: your paintbrush.
+%
+terminal: your studio.
+%
+coffee: optional, but fun.
+%
+bugs: invitations to learn.
+%
+errors: stepping stones.
+%
+code: your creation.
+%
+knowledge: your greatest library.
+%
+debugging: meditation for the mind.
+%
+documentation: a love letter to the future.
+%
+learning: the path never ends.
+%
+collaboration: code together.
+%
+automation: free your brain.
+%
+creativity: in every function.
+%
+code: the canvas of logic.
+%
+fun: the hidden dependency.
+%
+
